@@ -45,7 +45,8 @@ class Pipe :
         pygame.draw.rect(surface, brown, (int(self.x), 0, self.width, self.top_heigth))
         #วางถ่อล้าง
         pygame.draw.rect(surface, brown, (int(self.x), self.top_heigth + self.gab, self.width, HEIGH - (self.top_heigth + self.gab)))
-    
+
+        
     def get_rects(self):
          # ส่งค่า Hitbox ของทั้งท่อบนและท่อล่างกลับไป
         top_rect = pygame.Rect(int(self.x), 0, self.width, self.top_heigth)
